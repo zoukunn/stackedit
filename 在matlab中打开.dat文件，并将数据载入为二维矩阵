@@ -1,0 +1,6 @@
+filein='name.dat';              
+fid=fopen(filein,'rb');               %打开数据文件
+data=fread(fid,[x,y],'double');       %读取文件数据
+fclose(fid);                          %关闭文件
+
+% x和y分别是矩阵的行和列
